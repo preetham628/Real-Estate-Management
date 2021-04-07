@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+
+      .bg{
+      background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
+      background-image: url("bg2.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+
+    .body {
+      color: var(--mainBlack);
+      font-family: "Lato", sans-serif;
+
+  }
+    .col:first-child{
+      background: #222;
+      opacity: 0.8;
+
+    }
+    .navbar:first-child{
+      /*background: rgb(153, 109, 131);*/
+      /*background: #045e93;*/
+      background: #222;
+      opacity: 0.8;
+    }
+    .card{
+      color: aliceblue;
+      margin: 10px;
+      padding: 0;
+      background-color: #222;
+      border-radius: 10px;
+
+      width: 300px;
+    }
+    .card-title, .btn, .h2, .center{
+      text-align: center;
+    }
+    .card-body{
+      background-color: #222;
+      opacity: 0.8;
+    }
+    .container-fluid{
+      padding-bottom: 200px;
+      padding-left: 40px;
+    }
+    .img{
+      height: 20rem;
+
+    }
+    .card:hover{
+      color: rgba(255, 255, 255, 1);
+      /*box-shadow: 0 15px 15px rgba(0,0,0, .8);*/
+      box-shadow: 0 15px 15px rgba(17, 16, 16, 0.8);
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+    <br>
+    <h2 class="center">ABOUT US</h2>
+    <div class="bg">
+  <nav class="navbar transparent navbar-fixed-top navbar-expand-lg navbar-dark static-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <a class="navbar-brand glow" href="http://localhost:5000/aboutus">PerfectStays</a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost:5000/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+  </nav>
+    </div>
+    <br>
+    <h3 class="center">PERFECT STAYS</h3>
+    <p class="center">This real estate system Give the functionality for customers, allowing them to search for property by features or address. It provides functionality for the seller, authorize them to look into the system and add new properties and meet the various customers needs. For this each property is provided with an agent to facilitate the customers to get connected with the owners/sellers.</p>
+    <p class="center">Whenever searching is done for a new property, the main focus is on the location. As location being a spatial entity we are using the advantages given by spatial databases for our application. The application provides the customers to select any particular property and get information appropriately .Spatial data is data about location and space/dimensions</p>
+</div>
+</body>
+</html>

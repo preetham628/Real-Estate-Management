@@ -1,0 +1,58 @@
+<head>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <title>Real Estate Management</title>
+	    <style>
+        .bg{
+        background-image: url({{ url_for('static', filename = '/img/bg2.jpg')}});
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-bottom: 500px;
+      }
+    </style>
+</head>
+<div class="content bg">
+	<h1 class="headings">ADD PROPERTY</h1>
+	<br>
+	<br>
+	<div class="temp1">
+    <form method="POST" action="">
+        <label>Site No</label>
+        <br>
+        <input type="text" name="site" placeholder="Enter site number" required="required">
+        <br>
+        <label>Dimension</label>
+        <br>
+        <input type="text" name="dim" placeholder="Enter site dimension" required="required">
+        <br>
+        <label>Area</label>
+        <br>
+        <input type="text" name="area" placeholder="Enter area of the site" required="required">
+        <br>
+        <label>City</label>
+        <br>
+        <input type="text" name="city" placeholder="Enter city" required="required">
+        <br>
+        <label>Price</label>
+        <br>
+        <input type="text" name="price" placeholder="Price" required="required">
+        <br>
+        <label>Facing</label>
+        <br>
+        <input type="text" name="face" placeholder="Facing of the property" required="required">
+        <br>
+        <label>Customer ID</label>
+        <br>
+        <input type="text" name="cust" placeholder="Enter customer ID" required="required">
+        <br>
+        <label>Owner ID</label>
+        <br>
+        <input type="text" name="owner" placeholder="Enter owner ID" required="required">
+        <br>
+        <label>Agent ID</label>
+        <br>
+        <input type="text" name="agent" placeholder="Enter ID of agent in charge of property" required="required">
+        <br>
+        <input type="submit">
+    </form>
+    </div>
+</div>
